@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clonar repositorio') {
             steps {
-                git branch: 'main', url: "https://github.com/jorgeluisculisvillugas/Prototipo.git"
+                git branch: 'main', url: "https://github.com/NeriasSH/Prototipo.git"
             }
         }
         stage('Construir aplicación') {
@@ -19,6 +19,6 @@ pipeline {
                 bat 'java -jar target/ejercicio-0.0.1-SNAPSHOT.jar --server.port=8081'
 
             }
-        }
-    }
+        }
+    }
 }
